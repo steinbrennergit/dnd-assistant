@@ -1,5 +1,6 @@
 .dice-roller {
-    margin: 15px 0 0 15px;
+    padding-top: 15px;
+    padding-right: 16px;
     display: flex;
     flex-direction: row;
 }
