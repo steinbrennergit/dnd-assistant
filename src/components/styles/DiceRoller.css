@@ -1,9 +1,23 @@
-.diceRoller {
+.dice-roller {
+    margin: 15px 0 0 15px;
     display: flex;
     flex-direction: row;
 }
 
 .flex-column {
+    width: 32px;
     flex-direction: column;
-    max-width: 32px;
+}
+
+.roller-box {
+    text-align: center;
+    width: 32px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 1rem;
+}
+
+.dice-info {
+    background-color: #222222;
+    color: white;
 }
