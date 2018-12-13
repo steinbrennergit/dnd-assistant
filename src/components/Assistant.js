@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import InputSpinner from './InputSpinner';
+import DiceRoller from './DiceRoller';
 import './styles/Assistant.css';
 import './styles/bootstrap.min.css';
 import './styles/icon.css';
@@ -9,72 +9,12 @@ class Assistant extends Component {
     return (
       <div className="container" style={{ backgroundColor: "#EEEEEE", paddingBottom: "15px" }}>
         <table>
-          <tr>
-            <td>
-              <InputSpinner name="D20" />
-            </td>
-            <td>
-              <InputSpinner name="+/-" />
-            </td>
-            <td>
-              <button className="roll-button">ROLL</button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <InputSpinner name="D12" />
-            </td>
-            <td>
-              <InputSpinner name="+/-" />
-            </td>
-            <td>
-              <button className="roll-button">ROLL</button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <InputSpinner name="D10" />
-            </td>
-            <td>
-              <InputSpinner name="+/-" />
-            </td>
-            <td>
-              <button className="roll-button">ROLL</button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <InputSpinner name="D8" />
-            </td>
-            <td>
-              <InputSpinner name="+/-" />
-            </td>
-            <td>
-              <button className="roll-button">ROLL</button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <InputSpinner name="D6" />
-            </td>
-            <td>
-              <InputSpinner name="+/-" />
-            </td>
-            <td>
-              <button className="roll-button">ROLL</button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <InputSpinner name="D4" />
-            </td>
-            <td>
-              <InputSpinner name="+/-" />
-            </td>
-            <td>
-              <button className="roll-button">ROLL</button>
-            </td>
-          </tr>
+          <DiceRoller numSides="20" />
+          <DiceRoller numSides="12" />
+          <DiceRoller numSides="10" />
+          <DiceRoller numSides="8" />
+          <DiceRoller numSides="6" />
+          <DiceRoller numSides="4" />
         </table>
         <div className="output">
         </div>
