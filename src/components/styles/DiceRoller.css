@@ -1,0 +1,9 @@
+.diceRoller {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+    max-width: 32px;
+}
